@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD de Artistas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="mt-5 mb-4">CRUD de Artistas</h1>
+
+        <!-- Formulario para Crear Artista -->
+        <h2 class="mt-4">Crear Artista</h2>
+        <form id="crearArtistaForm">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Crear</button>
+        </form>
+
+        <!-- Formulario para Actualizar Artista -->
+        <h2 class="mt-4">Actualizar Artista</h2>
+        <form id="actualizarArtistaForm">
+            <div class="form-group">
+                <label for="idActualizar">ID del Artista a Actualizar:</label>
+                <input type="text" class="form-control" id="idActualizar" name="id" required>
+            </div>
+            <div class="form-group">
+                <label for="nombreActualizar">Nuevo Nombre:</label>
+                <input type="text" class="form-control" id="nombreActualizar" name="nombre" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Actualizar</button>
+        </form>
+
+        <!-- Formulario para Eliminar Artista -->
+        <h2 class="mt-4">Eliminar Artista</h2>
+        <form id="eliminarArtistaForm">
+            <div class="form-group">
+                <label for="idEliminar">ID del Artista a Eliminar:</label>
+                <input type="text" class="form-control" id="idEliminar" name="id" required>
+            </div>
+            <button type="submit" class="btn btn-danger">Eliminar</button>
+        </form>
+
+        <!-- Lista de Artistas -->
+        <h2 class="mt-4">Lista de Artistas</h2>
+        <ul id="listaArtistas" class="list-group">
+            <!-- Aquí se mostrarán los artistas -->
+        </ul>
+    </div>
+
+
+    <script src="scriptsAdminArtistas.js"></script>
+</body>
+
+</html>

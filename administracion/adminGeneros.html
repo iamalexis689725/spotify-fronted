@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD de Géneros</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5 mb-4">CRUD de Géneros</h1>
+
+        <!-- Formulario para Crear Género -->
+        <h2 class="mt-4">Crear Género</h2>
+        <form id="crearGeneroForm">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Crear</button>
+        </form>
+
+        <!-- Formulario para Actualizar Género -->
+        <h2 class="mt-4">Actualizar Género</h2>
+        <form id="actualizarGeneroForm">
+            <div class="form-group">
+                <label for="idActualizar">ID del Género a Actualizar:</label>
+                <input type="text" class="form-control" id="idActualizar" name="id" required>
+            </div>
+            <div class="form-group">
+                <label for="nombreActualizar">Nuevo Nombre:</label>
+                <input type="text" class="form-control" id="nombreActualizar" name="nombre" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Actualizar</button>
+        </form>
+
+        <!-- Formulario para Eliminar Género -->
+        <h2 class="mt-4">Eliminar Género</h2>
+        <form id="eliminarGeneroForm">
+            <div class="form-group">
+                <label for="idEliminar">ID del Género a Eliminar:</label>
+                <input type="text" class="form-control" id="idEliminar" name="id" required>
+            </div>
+            <button type="submit" class="btn btn-danger">Eliminar</button>
+        </form>
+
+        <!-- Lista de Géneros -->
+        <h2 class="mt-4">Lista de Géneros</h2>
+        <ul id="listaGeneros" class="list-group">
+            <!-- Aquí se mostrarán los géneros -->
+        </ul>
+    </div>
+
+    
+    <script src="scriptsAdminGeneros.js"></script>
+</body>
+</html>
